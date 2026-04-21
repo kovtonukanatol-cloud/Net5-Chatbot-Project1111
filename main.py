@@ -18,7 +18,7 @@ def clean_input(text):
 # --- FRANKLIN: TASK 1 (KNOWLEDGE BASE) ---
 # Franklin, put your dict and logic here
 
-}answers = {
+answers = {
     "password": "Click 'Forgot Password' and follow the steps sent to your email.",
     "wifi": "Restart WiFi or router. Check airplane mode.",
     "slow": "Close apps and restart. Check Task Manager.",
