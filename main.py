@@ -17,7 +17,8 @@ def clean_input(text):
 
 # --- FRANKLIN: TASK 1 (KNOWLEDGE BASE) ---
 # Franklin, put your dict and logic here
-answers = {
+
+}answers = {
     "password": "Click 'Forgot Password' and follow the steps sent to your email.",
     "wifi": "Restart WiFi or router. Check airplane mode.",
     "slow": "Close apps and restart. Check Task Manager.",
@@ -49,6 +50,16 @@ answers = {
     "boot": "Check BIOS boot order and startup devices.",
     "app": "Update or reinstall the application."
 }
+
+def get_response(msg):
+    try:
+        for key, value in answers.items():
+            if key in msg:
+                return value
+        return "I'm not sure about that. Try asking about battery, wifi, or type 'help'."
+    
+    except Exception as e:
+        return "Sorry, something went wrong while processing your request."
 
 # --- CAOLAN: TASK 3 (GUI) ---
 # Caolan, put your tkinter code here
